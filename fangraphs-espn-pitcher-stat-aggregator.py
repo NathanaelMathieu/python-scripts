@@ -10,7 +10,7 @@ git clone git@github.com:NathanaelMathieu/baseball_scraper.git
 cd baseball_scraper && py -3.7 setup.py install
 
 Run with:
-py -3.7 xFIP-pitcher-finder.py -a="['xFIP', 'ERA', 'K/9', 'IP', 'GS', 'CG']"
+py -3.7 fangraphs-espn-pitcher-stat-aggregator.py -a="['xFIP', 'ERA', 'K/9', 'IP', 'GS', 'CG']"
 
 '''
 from espn_api.baseball import League
