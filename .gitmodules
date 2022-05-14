@@ -1,0 +1,3 @@
+[submodule "pybaseball"]
+	path = submodules/pybaseball
+	url = git@github.com:jldbc/pybaseball.git

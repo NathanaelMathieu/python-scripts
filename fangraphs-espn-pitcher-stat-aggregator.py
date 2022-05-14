@@ -1,16 +1,12 @@
 '''
 
 Notes:
-The espn_api lib requires python3.7 as of April 2021 due to the versions of numpy it uses.
 
-py -3.7 -m pip install espn-api
-
-baseball_scraper is also broken, so use my fixed version:
-git clone git@github.com:NathanaelMathieu/baseball_scraper.git
-cd baseball_scraper && py -3.7 setup.py install
+First time setup: Run `. setup.sh && initialVenvSetup` to install everything and enter the venv
+After that run `. setup.sh && activate` to enter the venv
 
 Run with:
-py -3.7 fangraphs-espn-pitcher-stat-aggregator.py -a="['xFIP', 'ERA', 'K/9', 'Start-IP', 'Relief-IP', 'GS', 'CG']"
+python fangraphs-espn-pitcher-stat-aggregator.py -a="['xFIP', 'ERA', 'K/9', 'Start-IP', 'Relief-IP', 'GS', 'CG']"
 
 '''
 from espn_api.baseball import League

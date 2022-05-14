@@ -7,9 +7,9 @@ upgradeVenvPip () {
 }
 
 initialSetup () {
-    virtualenv venv && . $PYTHON_SCRIPTS_DIRECTORY/venv/bin/activate && upgradeVenvPip -m pip install --upgrade pip && pip install -r requirements.txt
+    git submodule update --init && virtualenv venv && . $PYTHON_SCRIPTS_DIRECTORY/venv/bin/activate && upgradeVenvPip && pip install -e $PYTHON_SCRIPTS_DIRECTORY/submodules/pybaseball && pip install -r requirements.txt
 }
 
-enter () {
+activate () {
     . $PYTHON_SCRIPTS_DIRECTORY/venv/bin/activate && pip install -r requirements.txt
 }
